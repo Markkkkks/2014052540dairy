@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:id="@+id/list_realtive"
+        android:background="@drawable/listview_background"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="sun"
+            android:id="@+id/list_weekday"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天我去了这里这里和这里。。。"
+            android:id="@+id/list_dec"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/list_weekday"
+            android:layout_toRightOf="@+id/list_weekday"
+            android:layout_toEndOf="@+id/list_weekday"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="31"
+            android:id="@+id/list_date"
+            android:textSize="30sp"
+            android:layout_below="@+id/list_weekday"
+            android:layout_alignRight="@+id/list_weekday"
+            android:layout_alignEnd="@+id/list_weekday" />
+    </RelativeLayout>
+
+</LinearLayout>

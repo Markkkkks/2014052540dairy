@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f1ed">
+<ImageView
+    android:layout_width="100px"
+    android:layout_height="50px"
+    android:background="@drawable/done"
+    android:id="@+id/done"
+    android:layout_marginBottom="41dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/diary_Date"
+    android:layout_toEndOf="@+id/diary_Date"
+    android:layout_marginLeft="21dp"
+    android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/diary_Date"
+        android:text="MMMMMM"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/line"
+        android:layout_below="@+id/diary_Date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:selectAllOnFocus="true"
+        android:enabled="true"
+        android:id="@+id/Edit" />
+
+</RelativeLayout>
